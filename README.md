@@ -27,6 +27,20 @@ Validate before uploading:
 python validate_submission.py submission.csv
 ```
 
+## Live Sandbox Demo
+
+A working, interactive demo is available here (exactly as required by the challenge spec Section 10.5):
+
+**→ https://huggingface.co/spaces/praneethg27/redrob-ranker**
+
+You can:
+- Upload a small candidate sample (or use the pre-loaded 50-candidate set)
+- Click "Run Ranker"
+- Inspect per-candidate score breakdowns and reasoning
+- Download a valid `submission.csv`
+
+This sandbox runs the exact same `rank.py` code as the full submission.
+
 ### Requirements
 
 - Python 3.11+ (standard library only — see `requirements.txt`)

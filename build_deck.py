@@ -179,7 +179,7 @@ body9 = [
     ("Explainability: every scoring rule maps 1:1 to a sentence in the JD - defensible line-by-line at interview.", False, 1),
     ("", False, 0),
     ("Deliberately avoided: per-candidate LLM calls (cannot fit the compute budget and hallucinate), embedding similarity as the primary signal (falls for keyword stuffers - the exact trap the dataset sets).", False, 0),
-    ("AI tools declared: Claude / Cursor used for code development and review; no candidate data fed to any LLM; all ranking logic is deterministic local code.", False, 0),
+    ("AI tools declared: Claude (architecture discussion, scoring design, implementation & review). No candidate data was sent to any LLM.", False, 0),
 ]
 fill_body(slides[8].shapes[2], body9, size=10)
 
@@ -188,13 +188,16 @@ body10 = [
     ("GitHub repository (public):", True, 0),
     (REPO, False, 1),
     ("", False, 0),
+    ("Live Sandbox Demo (verified):", True, 0),
+    ("https://huggingface.co/spaces/praneethg27/redrob-ranker", False, 1),
+    ("", False, 0),
     ("Reproduce command (from repo README):", True, 0),
     ("python rank.py --candidates ./candidates.jsonl --out ./submission.csv", False, 1),
     ("", False, 0),
     ("Repo contents: full source (rank.py + 9 scoring modules), README with methodology and setup, requirements.txt, submission_metadata.yaml, submission.csv, official validator.", False, 0),
     ("", False, 0),
     ("Ranked output: submission.csv / submission.xlsx (top-100 with rank, score, and per-candidate reasoning).", False, 0),
-    ("Runs on any CPU machine with Python 3.11+ - no setup beyond cloning the repo.", False, 0),
+    ("Sandbox accepts custom uploads and produces valid submission.csv.", False, 0),
 ]
 fill_body(slides[9].shapes[2], body10)
 
