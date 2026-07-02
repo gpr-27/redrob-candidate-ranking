@@ -1,3 +1,14 @@
+---
+title: Redrob Ranker
+emoji: 🔍
+colorFrom: blue
+colorTo: gray
+sdk: streamlit
+sdk_version: 1.35.0
+app_file: app.py
+pinned: false
+---
+
 # Intelligent Candidate Discovery & Ranking System
 
 Rule-based, deterministic ranker for the Redrob "Intelligent Candidate Discovery & Ranking Challenge". Reads 100,000 candidate profiles, scores them against the Senior AI/ML Engineer JD, and outputs the top-100 as a submission CSV — in ~10 seconds on CPU with zero external dependencies.
