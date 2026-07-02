@@ -8,7 +8,7 @@ team_name: "Team Praneeth"
 primary_contact:
   name: "Praneeth"
   email: "praneethg1830@gmail.com"
-  phone: "+91-XXXXXXXXXX"        # UPDATE with your phone number
+  phone: "+91 9392756256" # UPDATE with your phone number
 
 team_members:
   - name: "Praneeth"
@@ -20,7 +20,7 @@ team_members:
 # ============================================================================
 github_repo: "https://github.com/gpr-27/redrob-candidate-ranking"
 
-sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"  # UPDATE once sandbox is created
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker" # UPDATE once sandbox is created
 
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
@@ -42,7 +42,7 @@ compute:
 # AI tools declaration
 # ============================================================================
 ai_tools_used:
-  - "Claude"  # Architecture discussion and code development
+  - "Claude" # Architecture discussion and code development
 
 ai_usage_summary: |
   Used Claude (Antigravity IDE) for architecture discussion, scoring component
