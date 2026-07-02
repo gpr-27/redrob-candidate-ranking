@@ -34,10 +34,10 @@ st.markdown("""
         box-shadow: 0 2px 4px rgba(0,0,0,0.02);
     }
     </style>
-""", unsafe_allow_index=True)
+""", unsafe_allow_html=True)
 
-st.markdown('<div class="main-title">🔍 Redrob Candidate Discovery & Ranking Sandbox</div>', unsafe_allow_index=True)
-st.markdown('<div class="subtitle">Deterministic, rule-based ranking engine for Senior AI/ML Engineer role</div>', unsafe_allow_index=True)
+st.markdown('<div class="main-title">🔍 Redrob Candidate Discovery & Ranking Sandbox</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">Deterministic, rule-based ranking engine for Senior AI/ML Engineer role</div>', unsafe_allow_html=True)
 
 # Sidebar
 st.sidebar.header("Settings & Input")
@@ -148,17 +148,17 @@ if 'ranked_df' in st.session_state:
                 <div style="font-size: 0.9rem; color: #666;">TOTAL CANDIDATES PROCESSED</div>
                 <div style="font-size: 2rem; font-weight: bold; color: #1F2729;">{total:,}</div>
             </div>
-        """, unsafe_allow_index=True)
+        """, unsafe_allow_html=True)
     with col2:
         st.markdown(f"""
             <div class="metric-card">
                 <div style="font-size: 0.9rem; color: #666;">HONEYPOTS DETECTED & FILTERED</div>
                 <div style="font-size: 2rem; font-weight: bold; color: #D9534F;">{h_count}</div>
             </div>
-        """, unsafe_allow_index=True)
+        """, unsafe_allow_html=True)
     with col3:
         # Download buttons
-        st.markdown('<div class="metric-card" style="padding-bottom: 1.15rem;">', unsafe_allow_index=True)
+        st.markdown('<div class="metric-card" style="padding-bottom: 1.15rem;">', unsafe_allow_html=True)
         st.write("**DOWNLOAD RESULTS**")
         
         # CSV download
@@ -178,7 +178,7 @@ if 'ranked_df' in st.session_state:
             file_name="submission.csv",
             mime="text/csv"
         )
-        st.markdown('</div>', unsafe_allow_index=True)
+        st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown("---")
     
