@@ -1,0 +1,15 @@
+# Dataset — too large for the repo; downloaded from the hackathon portal
+candidates.jsonl
+candidates.jsonl.gz
+
+# Hackathon bundle docs (not part of our code)
+*.docx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
