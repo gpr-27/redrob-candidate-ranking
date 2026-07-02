@@ -3,24 +3,24 @@
 # ============================================================================
 # Team identity
 # ============================================================================
-team_name: "your-team-name-here"  # UPDATE with your team name
+team_name: "Team Praneeth"
 
 primary_contact:
-  name: "Full Name"  # UPDATE
-  email: "primary@example.com"   # UPDATE
-  phone: "+91-XXXXXXXXXX"        # UPDATE
+  name: "Praneeth"
+  email: "praneethg1830@gmail.com"
+  phone: "+91-XXXXXXXXXX"        # UPDATE with your phone number
 
 team_members:
-  - name: "Member 1 Full Name"  # UPDATE
-    email: "member1@example.com"  # UPDATE
+  - name: "Praneeth"
+    email: "praneethg1830@gmail.com"
     role: "ML Engineer"
 
 # ============================================================================
 # Code and reproducibility
 # ============================================================================
-github_repo: "https://github.com/YOUR_USERNAME/YOUR_REPO"  # UPDATE
+github_repo: "https://github.com/gpr-27/redrob-candidate-ranking"
 
-sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"  # UPDATE
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"  # UPDATE once sandbox is created
 
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
