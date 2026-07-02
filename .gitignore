@@ -4,6 +4,7 @@ candidates.jsonl.gz
 
 # Hackathon bundle docs (not part of our code)
 *.docx
+*.pptx
 
 # Python
 __pycache__/
