@@ -5,6 +5,9 @@ candidates.jsonl.gz
 # Hackathon bundle docs (not part of our code)
 *.docx
 *.pptx
+candidate_schema.json
+sample_submission.csv
+submission_metadata_template.yaml
 
 # Python
 __pycache__/
