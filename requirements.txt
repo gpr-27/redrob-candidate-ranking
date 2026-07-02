@@ -1,5 +1,7 @@
-# No third-party dependencies.
-# The entire ranking pipeline uses only the Python 3 standard library
-# (json, csv, argparse, datetime, re, pathlib, time).
-#
-# Tested with Python 3.11+ (developed on 3.13).
+# Core Ranking Pipeline: Zero external dependencies (uses Python standard library only).
+# The dependencies below are required ONLY for the Streamlit interactive sandbox UI and the PPTX deck generator.
+
+streamlit>=1.35.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+python-pptx>=0.6.21
