@@ -1,0 +1,79 @@
+# Redrob Hackathon — Submission Metadata
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "your-team-name-here"  # UPDATE with your team name
+
+primary_contact:
+  name: "Full Name"  # UPDATE
+  email: "primary@example.com"   # UPDATE
+  phone: "+91-XXXXXXXXXX"        # UPDATE
+
+team_members:
+  - name: "Member 1 Full Name"  # UPDATE
+    email: "member1@example.com"  # UPDATE
+    role: "ML Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/YOUR_USERNAME/YOUR_REPO"  # UPDATE
+
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"  # UPDATE
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "MacBook Pro"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.13"
+  os: "macOS"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Claude"  # Architecture discussion and code development
+
+ai_usage_summary: |
+  Used Claude (Antigravity IDE) for architecture discussion, scoring component
+  design, code implementation, and quality review. All candidate data processing
+  and ranking logic was designed and validated through iterative engineering.
+  No candidate data was fed to any LLM for ranking purposes.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  Deterministic rule-based ranker with 7 weighted scoring components and
+  multi-signal honeypot detection. Title+Career (50% combined) is the
+  decisive signal — encodes the JD's anti-keyword-stuffing philosophy.
+  Skills scorer values quality (proficiency × duration) over quantity, so
+  "expert with 0 months" scores zero. Behavioral scorer weights recency,
+  recruiter response rate, and notice period as hireability signals.
+  Honeypot detector catches impossible profiles: employment predating
+  company founding (checked against real founding years), stated experience
+  exceeding the career timeline, summary/field experience contradictions,
+  and expert-zero-duration skill patterns. Post-run audit confirms 0
+  impossible profiles in the top-100. Runtime: ~10 seconds for 100K
+  candidates on CPU, ~1.8 GB peak RAM. Zero external dependencies —
+  Python standard library only.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
