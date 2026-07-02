@@ -20,7 +20,7 @@ team_members:
 # ============================================================================
 github_repo: "https://github.com/gpr-27/redrob-candidate-ranking"
 
-sandbox_link: "https://huggingface.co/spaces/gpr-27/redrob-ranker"
+sandbox_link: "https://huggingface.co/spaces/praneethg27/redrob-ranker"
 
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
